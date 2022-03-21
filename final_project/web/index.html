@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Instagram Fake Account Detector</title>
+		<link rel="stylesheet" href="style.css" />
+		<script
+			src="https://kit.fontawesome.com/b2ba1193ce.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<div class="w-full bg-instagram flex flex-col h-full py-5">
+			<div class="mx-auto">
+				<div class="flex flex-col mt-5 items-center gap-y-2 px-2">
+					<i
+						class="fa-brands fa-instagram text-white text-[100px] sm:text-[150px]"
+					></i>
+					<span class="text-white font-bold capitalize text-lg sm:text-3xl"
+						>Instagram Fake Account Detector</span
+					>
+				</div>
+				<hr class="bg-white my-3" />
+				<div class="flex px-2">
+					<form action="" method="post" class="w-full">
+						<div class="flex flex-col items-baseline gap-y-1 my-3">
+							<span class="text-white font-semibold text-sm sm:text-lg"
+								>Apakah akun tersebut memiliki foto profil?</span
+							>
+							<div class="flex gap-x-3">
+								<label class="rounded overflow-hidden">
+									<input
+										checked
+										type="radio"
+										name="profile_pic"
+										class="hidden peer"
+										value="1"
+									/>
+									<div
+										class="peer-checked:bg-[#0095f6] bg-transparent px-5 py-2 border-2 border-[white] text-[white] peer-checked:border-[#0095f6] mt-2 font-semibold rounded"
+									>
+										Benar
+									</div>
+								</label>
+								<label class="rounded overflow-hidden">
+									<input
+										type="radio"
+										name="profile_pic"
+										class="hidden peer"
+										value="0"
+									/>
+									<div
+										class="peer-checked:bg-[#0095f6] bg-transparent px-5 py-2 border-2 border-[white] text-[white] peer-checked:border-[#0095f6] mt-2 font-semibold rounded"
+									>
+										Tidak
+									</div>
+								</label>
+							</div>
+						</div>
+						<div class="flex flex-col items-baseline gap-y-1 my-5">
+							<span class="text-white font-semibold text-sm sm:text-lg"
+								>Username Akun</span
+							>
+							<div class="flex gap-x-3 w-full">
+								<input
+									type="text"
+									class="px-3 py-2 rounded-sm w-full"
+									placeholder="Username (tanpa @)"
+									name="username"
+									required
+								/>
+							</div>
+						</div>
+						<div class="flex flex-col items-baseline gap-y-1 my-5">
+							<span class="text-white font-semibold text-sm sm:text-lg"
+								>Nama Lengkap Akun</span
+							>
+							<div class="flex gap-x-3 w-full">
+								<input
+									type="text"
+									class="px-3 py-2 rounded-sm w-full"
+									placeholder="Nama Lengkap"
+									name="fullname"
+									required
+								/>
+							</div>
+						</div>
+						<div class="flex flex-col items-baseline gap-y-1 my-5">
+							<span class="text-white font-semibold text-sm sm:text-lg"
+								>Deskripsi / Biodata Akun</span
+							>
+							<div class="flex gap-x-3 w-full">
+								<textarea
+									type="text"
+									class="px-3 py-2 rounded-sm w-full"
+									placeholder="Deskripsi"
+									name="desc"
+								></textarea>
+							</div>
+						</div>
+						<div class="flex flex-col items-baseline gap-y-1 my-5">
+							<span class="text-white font-semibold text-sm sm:text-lg"
+								>Apakah terdapat link eksternal pada biodata akun
+								tersebut?</span
+							>
+							<div class="flex gap-x-3">
+								<label class="rounded overflow-hidden">
+									<input
+										checked
+										type="radio"
+										name="external_url"
+										class="hidden peer"
+										value="1"
+									/>
+									<div
+										class="peer-checked:bg-[#0095f6] bg-transparent px-5 py-2 border-2 border-[white] text-[white] peer-checked:border-[#0095f6] mt-2 font-semibold rounded"
+									>
+										Benar
+									</div>
+								</label>
+								<label class="rounded overflow-hidden">
+									<input
+										type="radio"
+										name="external_url"
+										class="hidden peer"
+										value="0"
+									/>
+									<div
+										class="peer-checked:bg-[#0095f6] bg-transparent px-5 py-2 border-2 border-[white] text-[white] peer-checked:border-[#0095f6] mt-2 font-semibold rounded"
+									>
+										Tidak
+									</div>
+								</label>
+							</div>
+						</div>
+						<div class="flex flex-col items-baseline gap-y-1 my-5">
+							<span class="text-white font-semibold text-sm sm:text-lg"
+								>Apakah akun tersebut adalah sebuah akun private?</span
+							>
+							<div class="flex gap-x-3">
+								<label class="rounded overflow-hidden">
+									<input
+										checked
+										type="radio"
+										name="is_private"
+										class="hidden peer"
+										value="1"
+									/>
+									<div
+										class="peer-checked:bg-[#0095f6] bg-transparent px-5 py-2 border-2 border-[white] text-[white] peer-checked:border-[#0095f6] mt-2 font-semibold rounded"
+									>
+										Benar
+									</div>
+								</label>
+								<label class="rounded overflow-hidden">
+									<input
+										type="radio"
+										name="is_private"
+										class="hidden peer"
+										value="0"
+									/>
+									<div
+										class="peer-checked:bg-[#0095f6] bg-transparent px-5 py-2 border-2 border-[white] text-[white] peer-checked:border-[#0095f6] mt-2 font-semibold rounded"
+									>
+										Tidak
+									</div>
+								</label>
+							</div>
+						</div>
+						<div class="grid grid-cols-3 gap-x-2 my-5">
+							<div class="flex flex-col gap-y-2">
+								<span class="text-white font-semibold text-sm sm:text-lg"
+									>Jumlah Postingan</span
+								>
+								<div class="flex gap-x-3 w-full">
+									<input
+										type="number"
+										class="px-3 py-2 rounded-sm w-full appearance-none"
+										placeholder="Posts"
+										name="posts"
+										required
+									/>
+								</div>
+							</div>
+							<div class="flex flex-col gap-y-2">
+								<span class="text-white font-semibold text-sm sm:text-lg"
+									>Jumlah Followers</span
+								>
+								<div class="flex gap-x-3 w-full">
+									<input
+										type="number"
+										class="px-3 py-2 rounded-sm w-full appearance-none"
+										placeholder="Followers"
+										name="followers"
+										required
+									/>
+								</div>
+							</div>
+							<div class="flex flex-col gap-y-2">
+								<span class="text-white font-semibold text-sm sm:text-lg"
+									>Jumlah Akun di Follow</span
+								>
+								<div class="flex gap-x-3 w-full">
+									<input
+										type="number"
+										class="px-3 py-2 rounded-sm w-full appearance-none"
+										placeholder="Follows"
+										name="follows"
+										required
+									/>
+								</div>
+							</div>
+						</div>
+						<button
+							type="submit"
+							class="bg-[#0095f6] text-white font-bold p-3 w-full uppercase hover:bg-white hover:text-[#0095f6] transition rounded my-5"
+						>
+							Deteksi Akun
+						</button>
+					</form>
+				</div>
+				<div class="flex px-2 gap-x-3">
+					<span class="text-white font-semibold text-base lg:text-3xl"
+						>Hasil :</span
+					>
+					<span class="text-white font-bold text-base lg:text-3xl" id="result"
+						></span
+					>
+				</div>
+			</div>
+		</div>
+    </div>
+    <div class="fixed flex flex-col z-20 inset-0 justify-center items-center bg-neutral-900/60 w-full h-screen overflow-y-auto" id="loading">
+        <i class="fa-brands fa-instagram text-white text-[50px] sm:text-[100px] animate-bounce"></i>
+        <span class="font-bold text-3xl text-white">Loading...</span>
+    </div>
+	<script
+		src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+		crossorigin="anonymous"
+	></script>
+    <script>
+        $(document).ready(function() {
+            $('#loading').hide();
+            $('form').submit(function(e) {
+                e.preventDefault();
+                $('#loading').show();
+
+                var profile_pic = $('input[name=profile_pic]:checked').val();
+                var username = $('input[name=username]').val();
+                var nl_username=parseFloat((username.replace(/[^0-9]/g,"").length)/username.length).toFixed(2);
+                var fullname=$('input[name=fullname]').val();
+                var fullname_words=fullname.split(" ").length;
+                var nl_fullname=parseFloat((fullname.replace(/[^0-9]/g,"").length)/fullname.length).toFixed(2);
+                var name_username=username==fullname?1:0;
+                var desc=$('textarea[name=desc]').val().length;
+                var external_url=$('input[name=external_url]:checked').val();
+                var is_private=$('input[name=is_private]:checked').val();
+                var n_posts=$('input[name=posts]').val();
+                var n_followers=$('input[name=followers]').val();
+                var n_follows=$('input[name=follows]').val();
+
+                var data={
+                    'profile_pic':profile_pic,
+                    'nl_username':nl_username,
+                    'fullname':fullname_words,
+                    'nl_fullname':nl_fullname,
+                    'name_username':name_username,
+                    'desc':desc,
+                    'external_url':external_url,
+                    'is_private':is_private,
+                    'n_posts':n_posts,
+                    'n_followers':n_followers,
+                    'n_follows':n_follows
+                }
+
+                $.ajax({
+                    url: 'https://insta-fake-acc-api.herokuapp.com/detect',
+                    type: 'POST',
+                    data: data,
+                    contentType: false,
+                    cache: false,
+                    processData: false,
+                    success: function(res) {
+                        if (res.code==200) {
+                            $('#loading').hide();
+                            $('#result').text(res.result);
+                            console.log(res);
+                        }else{
+                            $('#loading').hide();
+                            $('#result').text(res.message);
+                            console.log(res);
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+	</body>
+</html>
