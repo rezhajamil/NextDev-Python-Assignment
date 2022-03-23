@@ -12,25 +12,25 @@
 		></script>
 	</head>
 	<body>
-		<div class="w-full bg-instagram flex flex-col h-full py-5">
+		<div class="flex flex-col w-full h-full py-5 bg-instagram">
 			<div class="mx-auto">
-				<div class="flex flex-col mt-5 items-center gap-y-2 px-2">
+				<div class="flex flex-col items-center px-2 mt-5 gap-y-2">
 					<i
 						class="fa-brands fa-instagram text-white text-[100px] sm:text-[150px]"
 					></i>
-					<span class="text-white font-bold capitalize text-lg sm:text-3xl"
+					<span class="text-lg font-bold text-white capitalize sm:text-3xl"
 						>Instagram Fake Account Detector</span
 					>
 				</div>
-				<hr class="bg-white my-3" />
+				<hr class="my-3 bg-white" />
 				<div class="flex px-2">
 					<form action="" method="post" class="w-full">
-						<div class="flex flex-col items-baseline gap-y-1 my-3">
-							<span class="text-white font-semibold text-sm sm:text-lg"
+						<div class="flex flex-col items-baseline my-3 gap-y-1">
+							<span class="text-sm font-semibold text-white sm:text-lg"
 								>Apakah akun tersebut memiliki foto profil?</span
 							>
 							<div class="flex gap-x-3">
-								<label class="rounded overflow-hidden">
+								<label class="overflow-hidden rounded">
 									<input
 										checked
 										type="radio"
@@ -44,7 +44,7 @@
 										Benar
 									</div>
 								</label>
-								<label class="rounded overflow-hidden">
+								<label class="overflow-hidden rounded">
 									<input
 										type="radio"
 										name="profile_pic"
@@ -59,54 +59,54 @@
 								</label>
 							</div>
 						</div>
-						<div class="flex flex-col items-baseline gap-y-1 my-5">
-							<span class="text-white font-semibold text-sm sm:text-lg"
+						<div class="flex flex-col items-baseline my-5 gap-y-1">
+							<span class="text-sm font-semibold text-white sm:text-lg"
 								>Username Akun</span
 							>
-							<div class="flex gap-x-3 w-full">
+							<div class="flex w-full gap-x-3">
 								<input
 									type="text"
-									class="px-3 py-2 rounded-sm w-full"
+									class="w-full px-3 py-2 rounded-sm"
 									placeholder="Username (tanpa @)"
 									name="username"
 									required
 								/>
 							</div>
 						</div>
-						<div class="flex flex-col items-baseline gap-y-1 my-5">
-							<span class="text-white font-semibold text-sm sm:text-lg"
+						<div class="flex flex-col items-baseline my-5 gap-y-1">
+							<span class="text-sm font-semibold text-white sm:text-lg"
 								>Nama Lengkap Akun</span
 							>
-							<div class="flex gap-x-3 w-full">
+							<div class="flex w-full gap-x-3">
 								<input
 									type="text"
-									class="px-3 py-2 rounded-sm w-full"
+									class="w-full px-3 py-2 rounded-sm"
 									placeholder="Nama Lengkap"
 									name="fullname"
 									required
 								/>
 							</div>
 						</div>
-						<div class="flex flex-col items-baseline gap-y-1 my-5">
-							<span class="text-white font-semibold text-sm sm:text-lg"
+						<div class="flex flex-col items-baseline my-5 gap-y-1">
+							<span class="text-sm font-semibold text-white sm:text-lg"
 								>Deskripsi / Biodata Akun</span
 							>
-							<div class="flex gap-x-3 w-full">
+							<div class="flex w-full gap-x-3">
 								<textarea
 									type="text"
-									class="px-3 py-2 rounded-sm w-full"
+									class="w-full px-3 py-2 rounded-sm"
 									placeholder="Deskripsi"
 									name="desc"
 								></textarea>
 							</div>
 						</div>
-						<div class="flex flex-col items-baseline gap-y-1 my-5">
-							<span class="text-white font-semibold text-sm sm:text-lg"
+						<div class="flex flex-col items-baseline my-5 gap-y-1">
+							<span class="text-sm font-semibold text-white sm:text-lg"
 								>Apakah terdapat link eksternal pada biodata akun
 								tersebut?</span
 							>
 							<div class="flex gap-x-3">
-								<label class="rounded overflow-hidden">
+								<label class="overflow-hidden rounded">
 									<input
 										checked
 										type="radio"
@@ -120,7 +120,7 @@
 										Benar
 									</div>
 								</label>
-								<label class="rounded overflow-hidden">
+								<label class="overflow-hidden rounded">
 									<input
 										type="radio"
 										name="external_url"
@@ -135,12 +135,12 @@
 								</label>
 							</div>
 						</div>
-						<div class="flex flex-col items-baseline gap-y-1 my-5">
-							<span class="text-white font-semibold text-sm sm:text-lg"
+						<div class="flex flex-col items-baseline my-5 gap-y-1">
+							<span class="text-sm font-semibold text-white sm:text-lg"
 								>Apakah akun tersebut adalah sebuah akun private?</span
 							>
 							<div class="flex gap-x-3">
-								<label class="rounded overflow-hidden">
+								<label class="overflow-hidden rounded">
 									<input
 										checked
 										type="radio"
@@ -154,7 +154,7 @@
 										Benar
 									</div>
 								</label>
-								<label class="rounded overflow-hidden">
+								<label class="overflow-hidden rounded">
 									<input
 										type="radio"
 										name="is_private"
@@ -169,15 +169,15 @@
 								</label>
 							</div>
 						</div>
-						<div class="grid grid-cols-3 gap-x-2 my-5">
+						<div class="grid grid-cols-3 my-5 gap-x-2">
 							<div class="flex flex-col gap-y-2">
-								<span class="text-white font-semibold text-sm sm:text-lg"
+								<span class="text-sm font-semibold text-white sm:text-lg"
 									>Jumlah Postingan</span
 								>
-								<div class="flex gap-x-3 w-full">
+								<div class="flex w-full gap-x-3">
 									<input
 										type="number"
-										class="px-3 py-2 rounded-sm w-full appearance-none"
+										class="w-full px-3 py-2 rounded-sm appearance-none"
 										placeholder="Posts"
 										name="posts"
 										required
@@ -185,13 +185,13 @@
 								</div>
 							</div>
 							<div class="flex flex-col gap-y-2">
-								<span class="text-white font-semibold text-sm sm:text-lg"
+								<span class="text-sm font-semibold text-white sm:text-lg"
 									>Jumlah Followers</span
 								>
-								<div class="flex gap-x-3 w-full">
+								<div class="flex w-full gap-x-3">
 									<input
 										type="number"
-										class="px-3 py-2 rounded-sm w-full appearance-none"
+										class="w-full px-3 py-2 rounded-sm appearance-none"
 										placeholder="Followers"
 										name="followers"
 										required
@@ -199,13 +199,13 @@
 								</div>
 							</div>
 							<div class="flex flex-col gap-y-2">
-								<span class="text-white font-semibold text-sm sm:text-lg"
+								<span class="text-sm font-semibold text-white sm:text-lg"
 									>Jumlah Akun di Follow</span
 								>
-								<div class="flex gap-x-3 w-full">
+								<div class="flex w-full gap-x-3">
 									<input
 										type="number"
-										class="px-3 py-2 rounded-sm w-full appearance-none"
+										class="w-full px-3 py-2 rounded-sm appearance-none"
 										placeholder="Follows"
 										name="follows"
 										required
@@ -222,19 +222,19 @@
 					</form>
 				</div>
 				<div class="flex px-2 gap-x-3">
-					<span class="text-white font-semibold text-base lg:text-3xl"
+					<!-- <span class="text-base font-semibold text-white lg:text-3xl"
 						>Hasil :</span
-					>
-					<span class="text-white font-bold text-base lg:text-3xl" id="result"
+					> -->
+					<span class="text-base font-bold text-white lg:text-3xl" id="result"
 						></span
 					>
 				</div>
 			</div>
 		</div>
     </div>
-    <div class="fixed flex flex-col z-20 inset-0 justify-center items-center bg-neutral-900/60 w-full h-screen overflow-y-auto" id="loading">
+    <div class="fixed inset-0 z-20 flex flex-col items-center justify-center w-full h-screen overflow-y-auto bg-neutral-900/60" id="loading">
         <i class="fa-brands fa-instagram text-white text-[50px] sm:text-[100px] animate-bounce"></i>
-        <span class="font-bold text-3xl text-white">Loading...</span>
+        <span class="text-3xl font-bold text-white">Loading...</span>
     </div>
 	<script
 		src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -276,22 +276,26 @@
                     'n_follows':n_follows
                 }
 
+
                 $.ajax({
-                    url: 'https://insta-fake-acc-api.herokuapp.com/detect',
+                    // url: 'https://insta-fake-acc-api.herokuapp.com/detect',
+                    url: 'http://127.0.0.1:5000/detect',
                     type: 'POST',
-                    data: data,
-                    contentType: false,
-                    cache: false,
-                    processData: false,
+                    data: JSON.stringify(data),
+					crossDomain: true,
+					contentType: "application/json",
+  					dataType: 'json' ,
                     success: function(res) {
                         if (res.code==200) {
-                            $('#loading').hide();
-                            $('#result').text(res.result);
-                            console.log(res);
+							setTimeout(() => { 
+								$('#loading').hide();
+								$('#result').text(`Hasil : ${res.result}`);
+							 }, 1000)
                         }else{
-                            $('#loading').hide();
-                            $('#result').text(res.message);
-                            console.log(res);
+							setTimeout(() => { 
+								$('#loading').hide();
+								$('#result').text(res.message);
+							 },1000)
                         }
                     }
                 });
